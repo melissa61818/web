@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="audiovisuales/pastel icono.png" type="image/x-icon">
+   <b> <title>Feliz Cumpleaños</title></b>
+</head>
+<style>
+    body
+{
+    margin: 0 auto;
+    padding: 0%;
+    width: 100%; 
+    max-width: 1200px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,118,0.7903536414565826) 49%, rgba(0,212,255,1) 100%);
+
+}   
+
+
+.seMueve {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-size: 110%;
+   
+}
+.seMueve span {
+    display: inline-block;
+    padding-left: 100%;
+    will-change: transform;
+    font-family: "Comic Sans Ms";
+    animation: colorchange 5s infinite;
+
+}
+
+
+@keyframes colorchange
+{
+    0%
+    {
+     color: red;
+     }
+    16.67%
+    {
+     color: orange;
+    }
+    33.33% 
+    {
+      color: yellow;
+    }
+    50% 
+    {
+     color: green;
+    }
+    66.67% {
+      color: blue;
+    }
+    83.33% {
+      color: indigo;
+    }
+    100% {
+     color: violet;
+    }
+}
+
+
+.image
+{
+    text-align: center;
+}
+.image img
+{
+    border-radius: 40%;
+    width: 90%; 
+        
+}
+
+button
+{
+    height: 20%;
+    width: 100%;
+    border-radius: 40%;
+    border-width: 50%;
+}
+.item{
+    list-style-type: none;
+}
+.item  button
+{
+    background-color: rgb(2,0,36);
+    background-color: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,118,0.7903536414565826) 49%, rgba(0,212,255,1) 100%);    list-style-type: none;
+    width: 100%;
+    color: aliceblue;
+}
+.content
+{
+    display: none;
+    
+}
+
+.heart {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  transform: rotate(20deg);
+  top: 50px;
+  left: 10px;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 50px;
+}
+  
+</style>
+<body>
+    <center>
+      <div class="seMueve">
+         <h1>
+             <span>Feliz Cumpleaños Melody</span>
+         </h1>
+      </div>
+    </center>
+    <div class="image">
+        <img src="audiovisuales/ft1.heic" alt="Melody">
+    </div>
+
+<div class="Melody">
+
+
+
+    <div class="heart"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <ul>
+        <li class="item">
+           <button onclick="toggleContent(1)"><h1> Cancion Favorita</h1></button>
+            <div id="content1" class="content"> <video src="audiovisuales/those eyes.mp4" controls height="300" width="100%"></video></div>
+         </li>
+        <li class="item">
+            <button onclick="toggleContent(2)"><h1>Color Favorito</h1></button> 
+            <div id="content2" class="content"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSIe9YT84waaIEsyMy8K-p1aR8Lp2iIOgSrQ&s" alt="color amarillo" width="100%" height="300"></div>
+        </li>
+        <li class="item">
+            <button onclick="toggleContent(3)"><h1>Pelicula Favorita</h1></button>
+            <div id="content3" class="content"><iframe width="100%" height="315" src="https://www.youtube.com/embed/SnYUQIx73jM?si=HLmj5qzFJazrzWKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </li>
+        <li class="item">
+            <button onclick="toggleContent(4)"><h1>Comida Favorita</h1></button>
+            <div id="content4" class="content"><img src="https://live.staticflickr.com/1274/1308829722_e0ed088f46_b.jpg" alt="yaroa" width="100%" height="300"></div>
+        </li>
+        <li class="item">
+            <button onclick="toggleContent(5)"><h1>Animal Favorito</h1></button>
+            <div id="content5" class="content"><img src="https://static.wikia.nocookie.net/wikidog/images/9/9f/Alaskan_Malamute.jpg/revision/latest?cb=20170710193828&path-prefix=es" alt="malamute de alaska" width="100%" height="200"></div>
+        </li>
+        <li class="item">
+            <button onclick="toggleContent(6)"><h1> Cosa en el mundo Favorita</h1></button>
+            <div id="content6" class="content">
+                <table border="1" align="center" >
+                    <tr>
+                        <td>
+                            <img src="audiovisuales/noche.jpg" alt="noche" width="100%" height="200">
+                        </td>
+                        <td>
+                            <img src="audiovisuales/soledad.jpg" alt="soledad" width="100%" height="200">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="audiovisuales/amor.jpg" alt="amor" width="100%" height="200">
+                        </td>
+                        <td>
+                            <img src="audiovisuales/sticker de hojita.jpg" alt="hojita" width="100%" height="200">
+                        </td>
+                    </tr>
+                </table>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+    <script>
+        const span = document.querySelector('.seMueve span');
+        let start = null;
+        function step(timestamp) {
+        if (!start) start = timestamp;
+         const progress = timestamp - start;
+        span.style.transform = 'translateX(' + (-progress / 10) % window.innerWidth + 'px)';
+        requestAnimationFrame(step);}
+        requestAnimationFrame(step);
+
+
+
+
+      function toggleContent(number) {
+            const content = document.getElementById(`content${number}`);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+    <footer>
+       <center> <h3>Derechos de autor <i>Melissa</i> &copy;2024</h3></center>
+    </footer>
+</body>
+</html>
